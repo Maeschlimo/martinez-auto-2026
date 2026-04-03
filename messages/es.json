@@ -1,0 +1,37 @@
+{
+  "common": {
+    "learnMore": "Más información",
+    "getStarted": "Comenzar",
+    "contactUs": "Contáctenos",
+    "readMore": "Leer más",
+    "backToHome": "Volver al inicio",
+    "allServices": "Todos los servicios",
+    "sendMessage": "Enviar mensaje",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "subject": "Asunto",
+    "required": "Obligatorio",
+    "submitting": "Enviando...",
+    "thankYou": "¡Gracias! Nos pondremos en contacto pronto.",
+    "errorGeneric": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "home": {
+    "heroHeadline": "Tu titular aquí",
+    "heroSubheadline": "Tu subtítulo aquí",
+    "heroCta": "Comenzar"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  }
+}

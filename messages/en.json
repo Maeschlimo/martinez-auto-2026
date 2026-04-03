@@ -1,0 +1,37 @@
+{
+  "common": {
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "contactUs": "Contact us",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "allServices": "All services",
+    "sendMessage": "Send message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "subject": "Subject",
+    "required": "Required",
+    "submitting": "Submitting...",
+    "thankYou": "Thank you! We'll be in touch soon.",
+    "errorGeneric": "Something went wrong. Please try again."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroHeadline": "Your headline here",
+    "heroSubheadline": "Your subheadline here",
+    "heroCta": "Get started"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
