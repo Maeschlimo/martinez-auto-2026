@@ -42,6 +42,65 @@ export default async function LocaleLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AutoRepair",
+              "name": "Martinez Auto Repair",
+              "url": process.env.NEXT_PUBLIC_SITE_URL ?? "https://martinez-auto.com",
+              "telephone": "+15125550100",
+              "foundingDate": "2008",
+              "founder": {
+                "@type": "Person",
+                "name": "Carlos Martinez"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "East 7th Street",
+                "addressLocality": "Austin",
+                "addressRegion": "TX",
+                "postalCode": "78702",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 30.2672,
+                "longitude": -97.7431
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "08:00",
+                  "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "08:00",
+                  "closes": "16:00"
+                }
+              ],
+              "areaServed": [
+                { "@type": "City", "name": "Austin", "addressRegion": "TX" },
+                { "@type": "PostalCode", "postalCode": "78702" },
+                { "@type": "PostalCode", "postalCode": "78721" },
+                { "@type": "PostalCode", "postalCode": "78722" },
+                { "@type": "PostalCode", "postalCode": "78741" },
+                { "@type": "PostalCode", "postalCode": "78723" },
+                { "@type": "PostalCode", "postalCode": "78724" }
+              ],
+              "priceRange": "$$",
+              "paymentAccepted": "Cash, Credit Card",
+              "currenciesAccepted": "USD",
+              "sameAs": [
+                "https://facebook.com/martinezautoatx"
+              ]
+            })
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>

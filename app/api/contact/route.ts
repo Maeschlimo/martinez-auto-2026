@@ -3,23 +3,58 @@ import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 
 export async function POST(req: Request) {
-  const { name, email, phone, service, message, locale } = await req.json();
+  try {
+    const body = await req.json();
+    const { name, email, phone, service, message, locale, source_page } = body;
 
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
-  await supabase.from('contact_submissions').insert([
-    { name, email, phone, service, message, locale, created_at: new Date().toISOString() }
-  ]);
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: 'Missing required fields: name, email, message' },
+        { status: 400 }
+      );
+    }
 
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  await resend.emails.send({
-    from: process.env.RESEND_FROM_EMAIL ?? 'noreply@martinez-auto.com',
-    to: process.env.NOTIFICATION_EMAIL ?? 'info@martinez-auto.com',
-    subject: `New Contact: ${name} — ${service}`,
-    text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`
-  });
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    );
 
-  return NextResponse.json({ success: true });
+    const { error: dbError } = await supabase.from('leads').insert([
+      {
+        name,
+        email,
+        phone: phone ?? null,
+        service: service ?? null,
+        message,
+        locale: locale ?? 'en',
+        source_page: source_page ?? null,
+      },
+    ]);
+
+    if (dbError) {
+      console.error('Supabase insert error:', dbError);
+      return NextResponse.json({ error: 'Database error' }, { status: 500 });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL ?? 'noreply@martinezautorepair.com',
+      to: process.env.RESEND_TO_EMAIL ?? 'carlos@martinezautorepair.com',
+      subject: `New Contact Form Submission — Martinez Auto Repair`,
+      text: [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone ?? 'N/A'}`,
+        `Service: ${service ?? 'N/A'}`,
+        `Message: ${message}`,
+        `Locale: ${locale ?? 'en'}`,
+        `Source: ${source_page ?? 'N/A'}`,
+      ].join('\n'),
+    });
+
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    console.error('Contact route error:', err);
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  }
 }
