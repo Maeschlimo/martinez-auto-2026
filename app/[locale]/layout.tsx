@@ -5,11 +5,22 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Barlow_Condensed, Inter } from "next/font/google";
 import "@/app/globals.css";
 
-// Font setup — replace per client with next/font/google or next/font/local
-// Example: import { Inter } from "next/font/google";
-// const brandFont = Inter({ subsets: ["latin"], variable: "--font-heading", display: "swap" });
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-barlow",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export default async function LocaleLayout({
   children,
@@ -27,7 +38,11 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${barlowCondensed.variable} ${inter.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      </head>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
@@ -36,7 +51,7 @@ export default async function LocaleLayout({
         </NextIntlClientProvider>
         <Script
           defer
-          data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+          data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "martinez-auto-repair.com"}
           src="https://plausible.io/js/script.js"
         />
       </body>

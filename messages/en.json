@@ -1,12 +1,12 @@
 {
   "common": {
-    "learnMore": "Learn more",
-    "getStarted": "Get started",
-    "contactUs": "Contact us",
-    "readMore": "Read more",
-    "backToHome": "Back to home",
-    "allServices": "All services",
-    "sendMessage": "Send message",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "allServices": "All Services",
+    "sendMessage": "Send Message",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
@@ -14,24 +14,151 @@
     "subject": "Subject",
     "required": "Required",
     "submitting": "Submitting...",
-    "thankYou": "Thank you! We'll be in touch soon.",
-    "errorGeneric": "Something went wrong. Please try again."
+    "thankYou": "Got it — we'll be in touch soon.",
+    "errorGeneric": "Something went wrong. Give us a call instead.",
+    "callNow": "Call Now",
+    "getFreeEstimate": "Get a Free Estimate",
+    "walkInsWelcome": "Walk-ins Welcome"
   },
   "nav": {
     "home": "Home",
     "services": "Services",
     "about": "About",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "callCta": "Call Now"
   },
   "home": {
-    "heroHeadline": "Your headline here",
-    "heroSubheadline": "Your subheadline here",
-    "heroCta": "Get started"
+    "heroHeadline": "East Austin's Honest Mechanic — Since 2008",
+    "heroSubheadline": "ASE-certified, bilingual, family-owned. We show you the problem before we fix it.",
+    "heroCta": "Call Us Today",
+    "heroCtaSecondary": "See Our Services",
+    "trustItem1": "Family-Owned Since 2008",
+    "trustItem2": "ASE Certified Technicians",
+    "trustItem3": "Bilingual EN/ES",
+    "trustItem4": "Same-Day Service",
+    "servicesHeading": "Everything Your Car Needs, Done Right",
+    "servicesBody": "From routine oil changes to check engine mysteries, we handle it all — domestic and import, cars and trucks. No guesswork. No unnecessary repairs. Just honest work at fair prices.",
+    "aboutHeading": "A Shop Built on Trust",
+    "aboutBody": "Carlos Martinez opened this shop on East 7th Street in 2008 with one goal: be the mechanic he wished existed when he was a customer. Eighteen years later, that's still the whole business plan.",
+    "aboutCta": "Our Story",
+    "testimonialsHeading": "What Our Customers Say",
+    "serviceAreaHeading": "Serving East Austin and Surrounding Neighborhoods",
+    "serviceAreaBody": "We're your neighborhood shop — right on East 7th Street. We serve drivers from East Austin, Mueller, Cherrywood, Plaza Saltillo, Holly, and the surrounding ZIP codes: 78702, 78721, 78722, 78741, 78723, 78724.",
+    "serviceAreaCta": "Get Directions",
+    "faqHeading": "Frequently Asked Questions",
+    "ctaHeading": "Ready to Bring Your Car In?",
+    "ctaBody": "Walk-ins welcome. Call ahead for bigger jobs and we'll make sure we're ready for you.",
+    "ctaCall": "Call Now",
+    "ctaForm": "Send a Message"
+  },
+  "services": {
+    "heroHeadline": "Full-Service Auto Repair in East Austin",
+    "heroSubheadline": "ASE-certified technicians, honest pricing, bilingual team. Walk-ins welcome for most services.",
+    "pageTitle": "Our Services",
+    "oilChange": {
+      "name": "Oil Change & Fluid Services",
+      "tagline": "Quick, clean, no-surprise pricing",
+      "description": "Full synthetic, conventional, and high-mileage oil changes. Plus transmission fluid, coolant, brake fluid, and power steering fluid flushes.",
+      "price": "From $39.99"
+    },
+    "brakeRepair": {
+      "name": "Brake Repair & Inspection",
+      "tagline": "Free inspection — we show you the wear before we quote",
+      "description": "Full brake system inspection, pad and rotor replacement, brake fluid flush, ABS diagnostics. Free inspection with any visit.",
+      "price": "Free inspection · Repair from $149"
+    },
+    "engineDiagnostics": {
+      "name": "Engine Diagnostics",
+      "tagline": "We diagnose before we repair — no guesswork",
+      "description": "Computer diagnostics for check engine lights, performance issues, and emissions testing. $89 fee waived when you repair with us.",
+      "price": "$89 (waived with repair)"
+    },
+    "acRepair": {
+      "name": "AC & Heating Repair",
+      "tagline": "Don't sweat a Texas summer — we've got you",
+      "description": "AC recharge, compressor repair, heater core replacement. Full climate system diagnostics for all makes and models.",
+      "price": "From $129"
+    },
+    "tireServices": {
+      "name": "Tire Services",
+      "tagline": "We match or beat dealer pricing",
+      "description": "Tire rotation, balancing, flat repair, and new tire installation. All major brands. Walk-ins welcome.",
+      "price": "Rotation from $29.99"
+    },
+    "transmission": {
+      "name": "Transmission Service",
+      "tagline": "Manual and automatic — domestic and import",
+      "description": "Transmission fluid change, filter replacement, diagnostics. We diagnose before we quote — no surprises.",
+      "price": "Call for a quote"
+    }
+  },
+  "about": {
+    "pageHeading": "Our Story",
+    "pageSubheading": "Family-owned and community-rooted since 2008",
+    "storyHeading": "How We Got Started",
+    "story": "Carlos Martinez moved to Austin from Monterrey, Mexico in 2001. He started working as a mechanic at a dealership, but always dreamed of running his own shop. In 2008, he opened Martinez Auto Repair in a small garage on East 7th Street. Today, the shop has grown to a full 4-bay facility with three technicians, but the philosophy hasn't changed: treat every car like it's your own, and treat every customer like family. Carlos still works on cars himself every day.",
+    "teamHeading": "Meet the Team",
+    "certificationsHeading": "Certifications & Credentials",
+    "cert1": "ASE Certified Master Technicians",
+    "cert2": "BBB Accredited Business (A+ rating)",
+    "cert3": "Texas State Inspection Station",
+    "cert4": "MACS Certified (AC repair)",
+    "whyChooseHeading": "Why Customers Keep Coming Back",
+    "why1Label": "18 Years in East Austin",
+    "why1Detail": "We've been your neighbors for nearly two decades. Our reputation is everything to us.",
+    "why2Label": "ASE Master Certified",
+    "why2Detail": "Not all mechanics are equal. ASE Master certification is the highest level in the trade.",
+    "why3Label": "Fully Bilingual",
+    "why3Detail": "English and Spanish — equally. No second-class service, no awkward translations.",
+    "why4Label": "Diagnosis Before Repair",
+    "why4Detail": "We never recommend a repair we haven't diagnosed. We show you the problem; you make the call.",
+    "why5Label": "Same-Day for Most Jobs",
+    "why5Detail": "We know you need your car. We work efficiently and keep you moving.",
+    "ctaHeading": "Come See Us",
+    "ctaBody": "Walk-ins welcome on East 7th Street. Call ahead for bigger jobs."
+  },
+  "contact": {
+    "pageHeading": "Get in Touch",
+    "pageSubheading": "Walk-ins welcome. Call ahead for larger jobs — we'll make sure we're ready for you.",
+    "intro": "We're easy to find on East 7th Street in East Austin. Call us, send a message, or just stop by. We'll be straight with you about what your car needs and how long it'll take.",
+    "formHeading": "Send Us a Message",
+    "nameLabel": "Your Name",
+    "emailLabel": "Email Address",
+    "phoneLabel": "Phone Number",
+    "vehicleLabel": "Year, Make & Model",
+    "serviceLabel": "What Do You Need?",
+    "messageLabel": "Tell Us More (optional)",
+    "submitLabel": "Send Message",
+    "successMessage": "Got it — we'll be in touch soon.",
+    "errorMessage": "Something went wrong. Give us a call instead.",
+    "serviceOptions": ["Oil Change & Fluids", "Brake Repair", "Engine Diagnostics / Check Engine Light", "AC Repair", "Tire Services", "Transmission Service", "General Inspection", "Other"],
+    "hoursHeading": "Business Hours",
+    "monFri": "Monday – Friday",
+    "monFriHours": "7:30 AM – 6:00 PM",
+    "saturday": "Saturday",
+    "saturdayHours": "8:00 AM – 4:00 PM",
+    "sunday": "Sunday",
+    "sundayHours": "Closed",
+    "hoursNote": "Hours subject to change on holidays. Call ahead to confirm.",
+    "locationHeading": "Find Us",
+    "locationStreet": "East 7th Street",
+    "locationCity": "Austin, TX 78702",
+    "directionsLabel": "Get Directions",
+    "phoneCallLabel": "Call Us",
+    "facebookLabel": "Find Us on Facebook"
+  },
+  "blog": {
+    "pageHeading": "Car Tips From Your East Austin Mechanic",
+    "pageSubheading": "Practical advice — no fluff, no upsell. Just what you actually need to know about your car.",
+    "readMore": "Read More"
   },
   "footer": {
+    "tagline": "Family-owned auto repair in East Austin since 2008. Honest work, fair prices, bilingual service.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "hours": "Mon–Fri: 7:30AM–6PM · Sat: 8AM–4PM",
     "rights": "All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "findUsOn": "Find us on Facebook"
   }
 }

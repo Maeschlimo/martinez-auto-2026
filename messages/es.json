@@ -1,37 +1,164 @@
 {
   "common": {
-    "learnMore": "Más información",
+    "learnMore": "Ver Más",
     "getStarted": "Comenzar",
     "contactUs": "Contáctenos",
-    "readMore": "Leer más",
-    "backToHome": "Volver al inicio",
-    "allServices": "Todos los servicios",
-    "sendMessage": "Enviar mensaje",
+    "readMore": "Leer Más",
+    "backToHome": "Volver al Inicio",
+    "allServices": "Todos los Servicios",
+    "sendMessage": "Enviar Mensaje",
     "name": "Nombre",
-    "email": "Correo electrónico",
+    "email": "Correo Electrónico",
     "phone": "Teléfono",
     "message": "Mensaje",
     "subject": "Asunto",
     "required": "Obligatorio",
     "submitting": "Enviando...",
-    "thankYou": "¡Gracias! Nos pondremos en contacto pronto.",
-    "errorGeneric": "Algo salió mal. Inténtalo de nuevo."
+    "thankYou": "Recibido — le contactamos pronto.",
+    "errorGeneric": "Algo salió mal. Llámenos mejor.",
+    "callNow": "Llamar Ahora",
+    "getFreeEstimate": "Pedir Presupuesto Gratis",
+    "walkInsWelcome": "Se Acepta Sin Cita"
   },
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
     "about": "Nosotros",
     "blog": "Blog",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "callCta": "Llamar Ahora"
   },
   "home": {
-    "heroHeadline": "Tu titular aquí",
-    "heroSubheadline": "Tu subtítulo aquí",
-    "heroCta": "Comenzar"
+    "heroHeadline": "El Mecánico Honesto del Este de Austin — Desde 2008",
+    "heroSubheadline": "Certificados ASE, bilingüe, negocio familiar. Le mostramos el problema antes de repararlo.",
+    "heroCta": "Llámenos Hoy",
+    "heroCtaSecondary": "Ver Servicios",
+    "trustItem1": "Negocio Familiar Desde 2008",
+    "trustItem2": "Técnicos Certificados ASE",
+    "trustItem3": "Servicio Bilingüe EN/ES",
+    "trustItem4": "Servicio el Mismo Día",
+    "servicesHeading": "Todo lo que Su Carro Necesita, Bien Hecho",
+    "servicesBody": "Desde cambios de aceite de rutina hasta misterios del check engine, lo manejamos todo — domésticos e importados, carros y camionetas. Sin suposiciones. Sin reparaciones innecesarias. Solo trabajo honesto a precios justos.",
+    "aboutHeading": "Un Taller Construido Sobre la Confianza",
+    "aboutBody": "Carlos Martinez abrió este taller en East 7th Street en 2008 con un objetivo: ser el mecánico que hubiera querido tener cuando era cliente. Dieciocho años después, ese sigue siendo todo el plan de negocio.",
+    "aboutCta": "Nuestra Historia",
+    "testimonialsHeading": "Lo Que Dicen Nuestros Clientes",
+    "serviceAreaHeading": "Sirviendo el Este de Austin y los Vecindarios Cercanos",
+    "serviceAreaBody": "Somos su taller del vecindario — en East 7th Street. Atendemos conductores del Este de Austin, Mueller, Cherrywood, Plaza Saltillo, Holly y los códigos postales cercanos: 78702, 78721, 78722, 78741, 78723, 78724.",
+    "serviceAreaCta": "Cómo Llegar",
+    "faqHeading": "Preguntas Frecuentes",
+    "ctaHeading": "¿Listo para Traer Su Carro?",
+    "ctaBody": "Se aceptan sin cita. Llame antes para trabajos más grandes y nos preparamos para atenderle.",
+    "ctaCall": "Llamar Ahora",
+    "ctaForm": "Enviar un Mensaje"
+  },
+  "services": {
+    "heroHeadline": "Mecánica Completa en el Este de Austin",
+    "heroSubheadline": "Técnicos certificados ASE, precios honestos y un equipo bilingüe. Sin cita para la mayoría de los servicios.",
+    "pageTitle": "Nuestros Servicios",
+    "oilChange": {
+      "name": "Cambio de Aceite y Fluidos",
+      "tagline": "Rápido, limpio, precios sin sorpresas",
+      "description": "Cambio de aceite sintético completo, convencional y alto kilometraje. También fluido de transmisión, refrigerante, frenos y dirección hidráulica.",
+      "price": "Desde $39.99"
+    },
+    "brakeRepair": {
+      "name": "Reparación e Inspección de Frenos",
+      "tagline": "Inspección gratis — le mostramos el desgaste antes de cotizar",
+      "description": "Inspección completa del sistema de frenos, cambio de pastillas y discos, purga de frenos, diagnóstico ABS. Inspección gratis con cualquier visita.",
+      "price": "Inspección gratis · Reparación desde $149"
+    },
+    "engineDiagnostics": {
+      "name": "Diagnóstico de Motor",
+      "tagline": "Diagnosticamos antes de reparar — sin suposiciones",
+      "description": "Diagnóstico computarizado para luz de check engine, problemas de rendimiento y pruebas de emisiones. El cargo de $89 se exenta cuando hace la reparación con nosotros.",
+      "price": "$89 (se exenta con reparación)"
+    },
+    "acRepair": {
+      "name": "Reparación de AC y Calefacción",
+      "tagline": "No sufra el calor de Texas — aquí le ayudamos",
+      "description": "Recarga de AC, reparación de compresor, reemplazo de núcleo de calefactor. Diagnóstico completo del sistema de clima para todas las marcas y modelos.",
+      "price": "Desde $129"
+    },
+    "tireServices": {
+      "name": "Servicios de Llantas",
+      "tagline": "Igualamos o mejoramos el precio del distribuidor",
+      "description": "Rotación, balanceo, reparación de ponchadura e instalación de llantas nuevas. Todas las marcas principales. Sin cita previa.",
+      "price": "Rotación desde $29.99"
+    },
+    "transmission": {
+      "name": "Servicio de Transmisión",
+      "tagline": "Manual y automática — domésticos e importados",
+      "description": "Cambio de fluido, reemplazo de filtro y diagnóstico de transmisión. Diagnosticamos antes de cotizar — sin sorpresas.",
+      "price": "Llame para cotización"
+    }
+  },
+  "about": {
+    "pageHeading": "Nuestra Historia",
+    "pageSubheading": "Negocio familiar con raíces en la comunidad desde 2008",
+    "storyHeading": "Cómo Empezamos",
+    "story": "Carlos Martinez se mudó a Austin desde Monterrey, México en 2001. Empezó a trabajar como mecánico en un distribuidor, pero siempre soñó con tener su propio taller. En 2008, abrió Martinez Auto Repair en un pequeño garaje en East 7th Street. Hoy, el taller ha crecido a una instalación completa de 4 bahías con tres técnicos, pero la filosofía no ha cambiado: tratar cada carro como si fuera el tuyo, y tratar a cada cliente como familia. Carlos sigue trabajando en carros él mismo todos los días.",
+    "teamHeading": "Conozca al Equipo",
+    "certificationsHeading": "Certificaciones y Credenciales",
+    "cert1": "Técnicos Maestros Certificados ASE",
+    "cert2": "Negocio Acreditado por BBB (calificación A+)",
+    "cert3": "Estación de Inspección del Estado de Texas",
+    "cert4": "Certificación MACS (reparación de AC)",
+    "whyChooseHeading": "Por Qué los Clientes Siguen Regresando",
+    "why1Label": "18 Años en el Este de Austin",
+    "why1Detail": "Hemos sido sus vecinos por casi dos décadas. Nuestra reputación lo es todo para nosotros.",
+    "why2Label": "Certificación Maestro ASE",
+    "why2Detail": "No todos los mecánicos son iguales. La certificación Maestro ASE es el nivel más alto del oficio.",
+    "why3Label": "Completamente Bilingüe",
+    "why3Detail": "Inglés y español — por igual. Sin servicio de segunda clase, sin traducciones incómodas.",
+    "why4Label": "Diagnóstico Antes de Reparar",
+    "why4Detail": "Nunca recomendamos una reparación que no hayamos diagnosticado. Le mostramos el problema; usted decide.",
+    "why5Label": "Mismo Día para la Mayoría de Trabajos",
+    "why5Detail": "Sabemos que necesita su carro. Trabajamos eficientemente para tenerle en marcha.",
+    "ctaHeading": "Visítenos",
+    "ctaBody": "Se acepta sin cita en East 7th Street. Llame antes para trabajos más grandes."
+  },
+  "contact": {
+    "pageHeading": "Contáctenos",
+    "pageSubheading": "Se acepta sin cita. Llame antes para trabajos más grandes — nos preparamos para atenderle.",
+    "intro": "Nos encuentra fácilmente en East 7th Street en el Este de Austin. Llámenos, envíe un mensaje o pase directo. Seremos directos con usted sobre lo que necesita su carro y cuánto tardará.",
+    "formHeading": "Envíenos un Mensaje",
+    "nameLabel": "Su Nombre",
+    "emailLabel": "Correo Electrónico",
+    "phoneLabel": "Número de Teléfono",
+    "vehicleLabel": "Año, Marca y Modelo",
+    "serviceLabel": "¿Qué Necesita?",
+    "messageLabel": "Cuéntenos Más (opcional)",
+    "submitLabel": "Enviar Mensaje",
+    "successMessage": "Recibido — le contactamos pronto.",
+    "errorMessage": "Algo salió mal. Llámenos mejor.",
+    "serviceOptions": ["Cambio de Aceite y Fluidos", "Reparación de Frenos", "Diagnóstico de Motor / Luz de Check Engine", "Reparación de AC", "Servicios de Llantas", "Servicio de Transmisión", "Inspección General", "Otro"],
+    "hoursHeading": "Horario de Atención",
+    "monFri": "Lunes – Viernes",
+    "monFriHours": "7:30 AM – 6:00 PM",
+    "saturday": "Sábado",
+    "saturdayHours": "8:00 AM – 4:00 PM",
+    "sunday": "Domingo",
+    "sundayHours": "Cerrado",
+    "hoursNote": "El horario puede cambiar en días festivos. Llame para confirmar.",
+    "locationHeading": "Encuéntrenos",
+    "locationStreet": "East 7th Street",
+    "locationCity": "Austin, TX 78702",
+    "directionsLabel": "Cómo Llegar",
+    "phoneCallLabel": "Llámenos",
+    "facebookLabel": "Encuéntrenos en Facebook"
+  },
+  "blog": {
+    "pageHeading": "Consejos de Su Mecánico del Este de Austin",
+    "pageSubheading": "Consejos prácticos — sin relleno, sin ventas. Solo lo que realmente necesita saber sobre su carro.",
+    "readMore": "Leer Más"
   },
   "footer": {
+    "tagline": "Taller mecánico familiar en el Este de Austin desde 2008. Trabajo honesto, precios justos, servicio bilingüe.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Información de Contacto",
+    "hours": "Lun–Vie: 7:30AM–6PM · Sáb: 8AM–4PM",
     "rights": "Todos los derechos reservados.",
-    "privacy": "Política de privacidad",
-    "terms": "Términos de servicio"
+    "findUsOn": "Encuéntrenos en Facebook"
   }
 }
