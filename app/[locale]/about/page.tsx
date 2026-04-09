@@ -112,7 +112,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <Container>
           <div className="grid gap-12 md:grid-cols-2 items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#c8922a] mb-2">Our Story</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7a5c00] mb-2">Our Story</p>
               <h2 className="text-3xl font-bold text-[#1c1917] mb-4" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                 {t("storyHeading")}
               </h2>
@@ -124,7 +124,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               role="img"
             >
               <div className="text-center text-[#78716c] p-8">
-                <User className="w-12 h-12 mx-auto mb-3 text-[#c8922a]" />
+                <User className="w-12 h-12 mx-auto mb-3 text-[#7a5c00]" />
                 <p className="text-sm">Carlos Martinez — Martinez Auto Repair</p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   role="img"
                 >
                   <div className="text-center text-[#78716c] p-6">
-                    <User className="w-16 h-16 mx-auto mb-2 text-[#c8922a]" />
+                    <User className="w-16 h-16 mx-auto mb-2 text-[#7a5c00]" />
                     <p className="text-sm font-medium">{member.name}</p>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   <h3 className="text-xl font-bold text-[#1c1917]" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                     {member.name}
                   </h3>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#c8922a] mt-1 mb-3">{member.role}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[#7a5c00] mt-1 mb-3">{member.role}</p>
                   <p className="text-sm text-[#78716c] leading-relaxed">{member.bio}</p>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {certifications.map((label) => (
               <div key={label} className="flex items-start gap-3 bg-[#faf9f7] rounded-xl p-5 border border-[#e7e5e4]">
-                <ShieldCheck className="w-6 h-6 text-[#c8922a] flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-6 h-6 text-[#7a5c00] flex-shrink-0 mt-0.5" />
                 <span className="text-sm font-semibold text-[#1c1917]">{label}</span>
               </div>
             ))}
@@ -192,7 +192,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {whyItems.map((item) => (
               <div key={item.label} className="bg-white/5 rounded-xl p-6 border border-white/10">
-                <h3 className="text-lg font-bold text-[#c8922a] mb-2" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
+                <h3 className="text-lg font-bold text-[#e0a020] mb-2" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                   {item.label}
                 </h3>
                 <p className="text-sm text-white/70 leading-relaxed">{item.detail}</p>

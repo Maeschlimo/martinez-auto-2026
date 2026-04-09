@@ -227,7 +227,7 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
           <p className="mt-4 text-lg text-white/80 max-w-xl">{hero.subheadline}</p>
           <a
             href={siteConfig.contact.phoneHref}
-            className="inline-flex mt-6 px-6 py-3 bg-[#e63946] text-white font-bold uppercase tracking-wide rounded hover:bg-[#b82030] transition-colors"
+            className="inline-flex mt-6 px-6 py-3 bg-[#b91c2c] text-white font-bold uppercase tracking-wide rounded hover:bg-[#8b1521] transition-colors"
             style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
           >
             {hero.cta}
@@ -248,7 +248,7 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
               <ul className="mt-4 space-y-3">
                 {benefits.map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#c8922a] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#7a5c00] flex-shrink-0 mt-0.5" />
                     <span className="text-[#44403c]">{benefit}</span>
                   </li>
                 ))}
@@ -272,7 +272,7 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
                 <p className="text-xs text-[#78716c] italic">{price.note}</p>
                 <a
                   href={siteConfig.contact.phoneHref}
-                  className="w-full flex justify-center mt-4 px-4 py-3 bg-[#e63946] text-white font-bold uppercase tracking-wide rounded hover:bg-[#b82030] transition-colors text-sm"
+                  className="w-full flex justify-center mt-4 px-4 py-3 bg-[#b91c2c] text-white font-bold uppercase tracking-wide rounded hover:bg-[#8b1521] transition-colors text-sm"
                   style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
                 >
                   {l === "es" ? "Llamar Ahora" : "Call Now"}
@@ -287,7 +287,7 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
                   </h3>
                   <div className="space-y-2">
                     {related.map((s) => (
-                      <Link key={s} href={`/services/${s}`} className="block text-[#c8922a] hover:text-[#1e3a5f] text-sm font-medium transition-colors">
+                      <Link key={s} href={`/services/${s}`} className="block text-[#7a5c00] hover:text-[#1e3a5f] text-sm font-medium transition-colors">
                         → {serviceNames[s]?.[l] ?? s}
                       </Link>
                     ))}

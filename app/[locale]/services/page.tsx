@@ -69,14 +69,14 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
             {services.map((service) => (
               <Link key={service.slug} href={`/services/${service.slug}`} className="group">
                 <div className="bg-white border border-[#e7e5e4] rounded-xl p-6 border-t-4 border-t-[#c8922a] shadow-sm hover:shadow-md transition-all h-full flex flex-col">
-                  <service.icon className="w-8 h-8 text-[#c8922a] mb-4" />
+                  <service.icon className="w-8 h-8 text-[#7a5c00] mb-4" />
                   <h2 className="text-xl font-bold text-[#1c1917] mb-1" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                     {service.name}
                   </h2>
-                  <p className="text-xs font-semibold text-[#c8922a] uppercase tracking-wide mb-3">{service.tagline}</p>
+                  <p className="text-xs font-semibold text-[#7a5c00] uppercase tracking-wide mb-3">{service.tagline}</p>
                   <p className="text-sm text-[#78716c] leading-relaxed flex-1">{service.description}</p>
                   <p className="mt-3 text-sm font-semibold text-[#1e3a5f]">{service.price}</p>
-                  <p className="mt-2 text-sm text-[#e63946] font-medium group-hover:underline">{tc("learnMore")} →</p>
+                  <p className="mt-2 text-sm text-[#b91c2c] font-medium group-hover:underline">{tc("learnMore")} →</p>
                 </div>
               </Link>
             ))}
@@ -90,7 +90,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {trustItems.map((item) => (
               <div key={item} className="flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-[#c8922a] flex-shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-[#7a5c00] flex-shrink-0" />
                 <span className="text-sm font-medium text-[#1c1917]">{item}</span>
               </div>
             ))}

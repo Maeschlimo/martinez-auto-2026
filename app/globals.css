@@ -6,8 +6,9 @@
   --color-primary-dark: #0f1f33;
   --color-secondary: #c8922a;
   --color-secondary-light: #f7e3b8;
-  --color-accent: #e63946;
+  --color-accent: #b91c2c;
   --color-accent-light: #fde0e3;
+  --color-secondary-text: #7a5c00;
 
   --color-surface: #ffffff;
   --color-surface-alt: #faf9f7;
@@ -18,7 +19,7 @@
 
   --color-success: #2d7a4f;
   --color-warning: #c8922a;
-  --color-error: #e63946;
+  --color-error: #b91c2c;
 
   --font-heading: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;

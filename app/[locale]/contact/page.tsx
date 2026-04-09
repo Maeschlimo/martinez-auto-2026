@@ -88,12 +88,12 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   {t("locationHeading")}
                 </h2>
                 <div className="space-y-3">
-                  <a href={siteConfig.contact.phoneHref} className="flex items-center gap-3 text-[#c8922a] hover:text-[#1e3a5f] font-medium">
+                  <a href={siteConfig.contact.phoneHref} className="flex items-center gap-3 text-[#7a5c00] hover:text-[#1e3a5f] font-medium">
                     <Phone className="w-5 h-5 flex-shrink-0" />
                     {siteConfig.contact.phone}
                   </a>
                   <div className="flex items-start gap-3 text-[#44403c]">
-                    <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#c8922a]" />
+                    <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#7a5c00]" />
                     <div>
                       <p>{siteConfig.contact.address.street}</p>
                       <p>{siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip}</p>
@@ -101,14 +101,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                         href="https://maps.google.com/?q=East+7th+Street+Austin+TX+78702"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#c8922a] hover:text-[#1e3a5f] text-sm font-medium mt-1 inline-block"
+                        className="text-[#7a5c00] hover:text-[#1e3a5f] text-sm font-medium mt-1 inline-block"
                       >
                         {t("directionsLabel")} →
                       </a>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 text-[#44403c]">
-                    <Clock className="w-5 h-5 flex-shrink-0 text-[#c8922a]" />
+                    <Clock className="w-5 h-5 flex-shrink-0 text-[#7a5c00]" />
                     <span className="text-sm">{locale === "es" ? "Lun–Vie: 7:30AM–6PM · Sáb: 8AM–4PM" : "Mon–Fri: 7:30AM–6PM · Sat: 8AM–4PM"}</span>
                   </div>
                   {siteConfig.social.facebook && (
@@ -116,7 +116,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                       href={siteConfig.social.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-[#c8922a] hover:text-[#1e3a5f] text-sm font-medium"
+                      className="flex items-center gap-3 text-[#7a5c00] hover:text-[#1e3a5f] text-sm font-medium"
                     >
                       <ExternalLink className="w-5 h-5 flex-shrink-0" />
                       {t("facebookLabel")}

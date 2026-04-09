@@ -99,8 +99,8 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                       aria-label={postData.title}
                       role="img"
                     >
-                      <div className="w-8 h-8 rounded-full bg-[#c8922a]/20 flex items-center justify-center">
-                        <span className="text-[#c8922a] text-xl font-bold">M</span>
+                      <div className="w-8 h-8 rounded-full bg-[#7a5c00]/20 flex items-center justify-center">
+                        <span className="text-[#7a5c00] text-xl font-bold">M</span>
                       </div>
                     </div>
                     <p className="text-sm text-[#78716c] mb-2">{post.published_at}</p>
@@ -108,7 +108,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                       {postData.title}
                     </h2>
                     <p className="mt-2 text-sm text-[#78716c] leading-relaxed">{postData.excerpt}</p>
-                    <p className="mt-3 text-sm text-[#e63946] font-medium group-hover:underline">{t("readMore")} →</p>
+                    <p className="mt-3 text-sm text-[#b91c2c] font-medium group-hover:underline">{t("readMore")} →</p>
                   </Card>
                 </Link>
               );

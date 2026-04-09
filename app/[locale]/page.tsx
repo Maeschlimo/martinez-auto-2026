@@ -136,7 +136,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href={siteConfig.contact.phoneHref}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#e63946] text-white font-bold uppercase tracking-wide rounded hover:bg-[#b82030] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#b91c2c] text-white font-bold uppercase tracking-wide rounded hover:bg-[#8b1521] transition-colors"
                 style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
               >
                 {t("heroCta")}
@@ -159,7 +159,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {trustItems.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-3">
-                <Icon className="w-6 h-6 text-[#c8922a] flex-shrink-0" />
+                <Icon className="w-6 h-6 text-[#7a5c00] flex-shrink-0" />
                 <span className="text-sm font-semibold text-[#1c1917]">{label}</span>
               </div>
             ))}
@@ -171,7 +171,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Section>
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#c8922a] mb-2">Our Services</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#7a5c00] mb-2">Our Services</p>
             <h2 className="text-4xl font-bold text-[#1c1917]" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
               {t("servicesHeading")}
             </h2>
@@ -181,13 +181,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {services.map((service) => (
               <Link key={service.href} href={service.href} className="group">
                 <div className="bg-white border border-[#e7e5e4] rounded-xl p-6 border-t-4 border-t-[#c8922a] shadow-sm hover:shadow-md transition-all h-full flex flex-col">
-                  <service.icon className="w-8 h-8 text-[#c8922a] mb-4" />
+                  <service.icon className="w-8 h-8 text-[#7a5c00] mb-4" />
                   <h3 className="text-xl font-bold text-[#1c1917] mb-2" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                     {service.title}
                   </h3>
                   <p className="text-sm text-[#78716c] leading-relaxed flex-1">{service.description}</p>
-                  <p className="mt-3 text-sm font-semibold text-[#c8922a]">{service.price}</p>
-                  <p className="mt-2 text-sm text-[#e63946] font-medium group-hover:underline">{tc("learnMore")} →</p>
+                  <p className="mt-3 text-sm font-semibold text-[#7a5c00]">{service.price}</p>
+                  <p className="mt-2 text-sm text-[#b91c2c] font-medium group-hover:underline">{tc("learnMore")} →</p>
                 </div>
               </Link>
             ))}
@@ -200,14 +200,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <Container className="py-16">
           <div className="grid gap-12 md:grid-cols-2 items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#c8922a] mb-2">About Us</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7a5c00] mb-2">About Us</p>
               <h2 className="text-4xl font-bold text-[#1c1917] mb-4" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
                 {t("aboutHeading")}
               </h2>
               <p className="text-[#78716c] leading-relaxed text-lg">{t("aboutBody")}</p>
               <Link
                 href="/about"
-                className="inline-flex mt-6 px-5 py-2.5 bg-[#c8922a] text-white font-bold uppercase tracking-wide text-sm rounded hover:bg-[#9a6d1a] transition-colors"
+                className="inline-flex mt-6 px-5 py-2.5 bg-[#7a5c00] text-white font-bold uppercase tracking-wide text-sm rounded hover:bg-[#5c4400] transition-colors"
                 style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
               >
                 {t("aboutCta")} →
@@ -219,7 +219,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               role="img"
             >
               <div className="text-center text-[#78716c] p-8">
-                <Wrench className="w-12 h-12 mx-auto mb-3 text-[#c8922a]" />
+                <Wrench className="w-12 h-12 mx-auto mb-3 text-[#7a5c00]" />
                 <p className="text-sm">Martinez Auto Repair — Inside the Shop</p>
               </div>
             </div>
@@ -252,7 +252,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               href="https://maps.google.com/?q=East+7th+Street+Austin+TX+78702"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex mt-6 px-5 py-2.5 bg-[#c8922a] text-white font-bold uppercase tracking-wide text-sm rounded hover:bg-[#9a6d1a] transition-colors"
+              className="inline-flex mt-6 px-5 py-2.5 bg-[#7a5c00] text-white font-bold uppercase tracking-wide text-sm rounded hover:bg-[#5c4400] transition-colors"
               style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
             >
               {t("serviceAreaCta")}
@@ -278,7 +278,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Mobile floating CTA */}
       <a
         href={siteConfig.contact.phoneHref}
-        className="md:hidden fixed bottom-6 right-6 z-50 flex items-center gap-2 px-5 py-3 bg-[#e63946] text-white font-bold uppercase tracking-wide rounded-full shadow-lg hover:bg-[#b82030] transition-colors"
+        className="md:hidden fixed bottom-6 right-6 z-50 flex items-center gap-2 px-5 py-3 bg-[#b91c2c] text-white font-bold uppercase tracking-wide rounded-full shadow-lg hover:bg-[#8b1521] transition-colors"
         style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
       >
         <Phone className="w-4 h-4" />

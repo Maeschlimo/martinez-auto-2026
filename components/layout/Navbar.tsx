@@ -39,8 +39,8 @@ export function Navbar() {
               href={item.href}
               className={`text-sm font-medium transition-colors ${
                 pathname === item.href
-                  ? "text-[#c8922a]"
-                  : "text-white/80 hover:text-[#c8922a]"
+                  ? "text-[#e0a020]"
+                  : "text-white/80 hover:text-[#e0a020]"
               }`}
             >
               {item.label}
@@ -50,7 +50,7 @@ export function Navbar() {
           {/* Language toggle */}
           <button
             onClick={() => switchLocale(locale === "en" ? "es" : "en")}
-            className="flex items-center gap-1 px-3 py-1 rounded-full border border-white/30 text-sm font-medium text-white/70 hover:text-[#c8922a] hover:border-[#c8922a] transition-colors"
+            className="flex items-center gap-1 px-3 py-1 rounded-full border border-white/30 text-sm font-medium text-white/70 hover:text-[#e0a020] hover:border-[#e0a020] transition-colors"
           >
             {locale === "en" ? "ES" : "EN"}
           </button>
@@ -58,7 +58,7 @@ export function Navbar() {
           {/* Call Now CTA */}
           <a
             href={siteConfig.contact.phoneHref}
-            className="flex items-center gap-2 px-4 py-2 bg-[#e63946] text-white text-sm font-bold uppercase tracking-wide rounded hover:bg-[#b82030] transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-[#b91c2c] text-white text-sm font-bold uppercase tracking-wide rounded hover:bg-[#8b1521] transition-colors"
             style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}
           >
             <Phone className="w-4 h-4" />
@@ -86,7 +86,7 @@ export function Navbar() {
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className={`block py-2 text-sm font-medium ${
-                  pathname === item.href ? "text-[#c8922a]" : "text-white/80"
+                  pathname === item.href ? "text-[#e0a020]" : "text-white/80"
                 }`}
               >
                 {item.label}
@@ -103,7 +103,7 @@ export function Navbar() {
             </button>
             <a
               href={siteConfig.contact.phoneHref}
-              className="flex items-center gap-2 mt-2 px-4 py-3 bg-[#e63946] text-white text-sm font-bold uppercase tracking-wide rounded justify-center"
+              className="flex items-center gap-2 mt-2 px-4 py-3 bg-[#b91c2c] text-white text-sm font-bold uppercase tracking-wide rounded justify-center hover:bg-[#8b1521] transition-colors"
             >
               <Phone className="w-4 h-4" />
               {t("callCta")}
