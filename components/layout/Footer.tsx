@@ -6,6 +6,7 @@ import { Phone, MapPin, Clock, ExternalLink } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const year = new Date().getFullYear();
 
   return (
@@ -25,7 +26,7 @@ export function Footer() {
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 text-[#c8922a] hover:text-white transition-colors text-sm"
+                className="inline-flex items-center gap-2 mt-4 text-[#e8b84a] hover:text-white transition-colors text-sm"
               >
                 <ExternalLink className="w-4 h-4" />
                 {t("findUsOn")}
@@ -38,16 +39,16 @@ export function Footer() {
             <p className="font-semibold text-white mb-4">{t("quickLinks")}</p>
             <div className="space-y-2 text-sm">
               {[
-                { href: "/", label: "Home" },
-                { href: "/services", label: "Services" },
-                { href: "/about", label: "About Us" },
-                { href: "/blog", label: "Blog" },
-                { href: "/contact", label: "Contact" },
+                { href: "/", label: tNav("home") },
+                { href: "/services", label: tNav("services") },
+                { href: "/about", label: tNav("about") },
+                { href: "/blog", label: tNav("blog") },
+                { href: "/contact", label: tNav("contact") },
               ].map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block text-[#c8922a] hover:text-white transition-colors"
+                  className="block text-[#e8b84a] hover:text-white transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -61,20 +62,20 @@ export function Footer() {
             <div className="space-y-3 text-sm text-white/70">
               <a
                 href={siteConfig.contact.phoneHref}
-                className="flex items-center gap-2 text-[#c8922a] hover:text-white transition-colors font-medium"
+                className="flex items-center gap-2 text-[#e8b84a] hover:text-white transition-colors font-medium"
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />
                 {siteConfig.contact.phone}
               </a>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#c8922a]" />
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#e8b84a]" />
                 <span>
                   {siteConfig.contact.address.street}<br />
                   {siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.zip}
                 </span>
               </div>
               <div className="flex items-start gap-2">
-                <Clock className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#c8922a]" />
+                <Clock className="w-4 h-4 flex-shrink-0 mt-0.5 text-[#e8b84a]" />
                 <span>{t("hours")}</span>
               </div>
             </div>

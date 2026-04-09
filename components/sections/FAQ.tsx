@@ -29,6 +29,7 @@ export function FAQ({ id = "faq", heading, items, background = "default" }: FAQP
             <div key={i}>
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                aria-expanded={openIndex === i}
                 className="w-full py-5 flex items-center justify-between text-left font-medium hover:text-[var(--color-primary)] transition-colors"
               >
                 <span>{item.question}</span>
