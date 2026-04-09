@@ -5,7 +5,8 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CTA } from "@/components/sections/CTA";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { ShieldCheck, User } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
@@ -36,6 +37,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const teamMembers = [
     {
       name: "Carlos Martinez",
+      image: "/images/team-carlos.webp",
       role: locale === "es" ? "Dueño y Técnico Principal" : "Owner & Lead Technician",
       bio: locale === "es"
         ? "Técnico Maestro ASE con 23 años de experiencia. Especialista en diagnóstico de motores y sistemas eléctricos. Originario de Monterrey, México."
@@ -45,6 +47,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     },
     {
       name: "David Chen",
+      image: "/images/team-david.webp",
       role: locale === "es" ? "Técnico Senior" : "Senior Technician",
       bio: locale === "es"
         ? "Certificado ASE. 12 años de experiencia especializándose en importados europeos y asiáticos. Se unió al equipo en 2016."
@@ -54,6 +57,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     },
     {
       name: "Miguel Reyes",
+      image: "/images/team-miguel.webp",
       role: locale === "es" ? "Técnico" : "Technician",
       bio: locale === "es"
         ? "Especialista en sistemas de frenos y suspensión. Creció en el vecindario. Bilingüe."
@@ -118,15 +122,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </h2>
               <p className="text-lg text-[#78716c] leading-relaxed">{t("story")}</p>
             </div>
-            <div
-              className="aspect-[4/3] bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center"
-              aria-label={locale === "es" ? "Carlos Martinez trabajando en el motor de un vehículo" : "Carlos Martinez working on a vehicle engine"}
-              role="img"
-            >
-              <div className="text-center text-[#78716c] p-8">
-                <User className="w-12 h-12 mx-auto mb-3 text-[#7a5c00]" />
-                <p className="text-sm">Carlos Martinez — Martinez Auto Repair</p>
-              </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+              <Image
+                src="/images/atmosphere-carlos-working.webp"
+                alt={locale === "es" ? "Carlos Martinez trabajando en el motor de un vehículo — el dueño todavía trabaja con sus manos todos los días" : "Carlos Martinez working on a vehicle engine — the owner still turns wrenches every day"}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </Container>
@@ -143,15 +146,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="grid gap-8 md:grid-cols-3">
             {teamMembers.map((member) => (
               <div key={member.name} className="bg-white rounded-xl overflow-hidden shadow-sm border border-[#e7e5e4]">
-                <div
-                  className="aspect-[3/4] bg-[#1e3a5f]/10 flex items-center justify-center"
-                  aria-label={locale === "es" ? member.alt_es : member.alt_en}
-                  role="img"
-                >
-                  <div className="text-center text-[#78716c] p-6">
-                    <User className="w-16 h-16 mx-auto mb-2 text-[#7a5c00]" />
-                    <p className="text-sm font-medium">{member.name}</p>
-                  </div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src={member.image}
+                    alt={locale === "es" ? member.alt_es : member.alt_en}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#1c1917]" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
@@ -169,9 +171,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       {/* Certifications */}
       <Section>
         <Container>
-          <h2 className="text-4xl font-bold text-[#1c1917] mb-8" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
-            {t("certificationsHeading")}
-          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-6 mb-8">
+            <h2 className="text-4xl font-bold text-[#1c1917]" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
+              {t("certificationsHeading")}
+            </h2>
+            <div className="flex items-center gap-4">
+              <Image src="/images/trust-badge-ase.svg" alt="ASE Certified Master Technicians" width={72} height={72} />
+              <Image src="/images/trust-badge-bbb.svg" alt="BBB Accredited Business — A+ Rating" width={72} height={72} />
+            </div>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {certifications.map((label) => (
               <div key={label} className="flex items-start gap-3 bg-[#faf9f7] rounded-xl p-5 border border-[#e7e5e4]">

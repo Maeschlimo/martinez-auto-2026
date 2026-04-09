@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { Wrench, Disc3, Cpu, Wind, Circle, Settings, ShieldCheck, Star, Clock, Languages, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
@@ -114,14 +115,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[560px] flex items-center bg-[#0d1b2a]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a] via-[#0d1b2a]/90 to-[#1e3a5f]/40" />
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{ background: "linear-gradient(135deg, #0d1b2a 0%, #1e3a5f 100%)" }}
-          aria-label="Martinez Auto Repair — 4-bay garage at golden hour, mechanics at work"
-          role="img"
+      <section className="relative min-h-[560px] flex items-center bg-[#0d1b2a] overflow-hidden">
+        <Image
+          src="/images/hero-shop-exterior.webp"
+          alt="Martinez Auto Repair — 4-bay garage at golden hour, mechanics at work with cars on lifts visible inside"
+          fill
+          className="object-cover opacity-40"
+          priority
+          sizes="100vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a] via-[#0d1b2a]/90 to-[#1e3a5f]/40" />
         <Container className="relative z-10 py-24">
           <div className="max-w-2xl">
             <h1
@@ -156,13 +159,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Trust Strip */}
       <section className="bg-[#faf9f7] border-b border-[#e7e5e4]">
         <Container className="py-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {trustItems.map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-3">
-                <Icon className="w-6 h-6 text-[#7a5c00] flex-shrink-0" />
-                <span className="text-sm font-semibold text-[#1c1917]">{label}</span>
-              </div>
-            ))}
+          <div className="flex flex-wrap items-center gap-6 justify-between">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 flex-1">
+              {trustItems.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center gap-3">
+                  <Icon className="w-6 h-6 text-[#7a5c00] flex-shrink-0" />
+                  <span className="text-sm font-semibold text-[#1c1917]">{label}</span>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center gap-4 flex-shrink-0">
+              <Image src="/images/trust-badge-ase.svg" alt="ASE Certified Master Technicians" width={60} height={60} />
+              <Image src="/images/trust-badge-bbb.svg" alt="BBB Accredited Business — A+ Rating" width={60} height={60} />
+            </div>
           </div>
         </Container>
       </section>
@@ -213,15 +222,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {t("aboutCta")} →
               </Link>
             </div>
-            <div
-              className="aspect-[4/3] bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center"
-              aria-label="Inside Martinez Auto Repair shop — hydraulic lifts, tools, and mechanics at work"
-              role="img"
-            >
-              <div className="text-center text-[#78716c] p-8">
-                <Wrench className="w-12 h-12 mx-auto mb-3 text-[#7a5c00]" />
-                <p className="text-sm">Martinez Auto Repair — Inside the Shop</p>
-              </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+              <Image
+                src="/images/about-shop-interior.webp"
+                alt="Inside Martinez Auto Repair shop — hydraulic lifts, tools, and mechanics at work in an active 4-bay garage"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </Container>

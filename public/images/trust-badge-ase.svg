@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Shield shape -->
+  <path d="M60 8 L96 24 L96 60 C96 82 80 100 60 112 C40 100 24 82 24 60 L24 24 Z" fill="#c8922a"/>
+  <!-- Wrench icon centered in shield -->
+  <g transform="translate(60,60)" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Wrench handle -->
+    <line x1="-16" y1="16" x2="6" y2="-6"/>
+    <!-- Wrench head circle -->
+    <circle cx="14" cy="-14" r="12" stroke="#fff" stroke-width="5" fill="none"/>
+    <!-- Wrench head cutout hint -->
+    <line x1="6" y1="-6" x2="10" y2="-10"/>
+  </g>
+  <!-- Gear teeth ring -->
+  <g fill="#c8922a" stroke="#fff" stroke-width="2.5">
+    <circle cx="60" cy="46" r="9" fill="none" stroke="#fff" stroke-width="3.5"/>
+    <!-- Simplified gear suggestion via small lines around circle -->
+    <line x1="60" y1="35" x2="60" y2="31" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="60" y1="57" x2="60" y2="61" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="49" y1="46" x2="45" y2="46" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="71" y1="46" x2="75" y2="46" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="52" y1="38" x2="49.2" y2="35.2" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="68" y1="54" x2="70.8" y2="56.8" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="68" y1="38" x2="70.8" y2="35.2" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="52" y1="54" x2="49.2" y2="56.8" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Checkmark at bottom of shield -->
+  <polyline points="46,72 56,82 76,60" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

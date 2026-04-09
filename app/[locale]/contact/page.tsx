@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { Phone, MapPin, Clock, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "es" }];
@@ -42,6 +43,18 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <p className="mt-3 text-lg text-white/80">{t("pageSubheading")}</p>
         </Container>
       </section>
+
+      {/* Decorative area image */}
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src="/images/contact-page-map-area.webp"
+          alt="East Austin neighborhood commercial street with murals and local businesses"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1e3a5f]/30 to-transparent" />
+      </div>
 
       {/* Main content */}
       <section className="py-16">
