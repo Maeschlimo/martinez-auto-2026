@@ -179,7 +179,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
-              <Link key={service.href} href={service.href} className="group">
+              <Link key={service.href} href={service.href} className="group" aria-label={service.title}>
                 <div className="bg-white border border-[#e7e5e4] rounded-xl p-6 border-t-4 border-t-[#c8922a] shadow-sm hover:shadow-md transition-all h-full flex flex-col">
                   <service.icon className="w-8 h-8 text-[#7a5c00] mb-4" />
                   <h3 className="text-xl font-bold text-[#1c1917] mb-2" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>

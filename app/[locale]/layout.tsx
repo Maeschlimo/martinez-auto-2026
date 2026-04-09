@@ -40,8 +40,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${barlowCondensed.variable} ${inter.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -109,7 +107,7 @@ export default async function LocaleLayout({
           <Footer />
         </NextIntlClientProvider>
         <Script
-          defer
+          strategy="lazyOnload"
           data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "martinez-auto-repair.com"}
           src="https://plausible.io/js/script.js"
         />

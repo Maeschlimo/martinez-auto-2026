@@ -19,6 +19,7 @@ export function buildMetadata({ title, description, path, locale, image }: PageS
     alternates: {
       canonical: url,
       languages: {
+        "x-default": `${siteConfig.url}/en${path}`,
         en: `${siteConfig.url}/en${path}`,
         es: `${siteConfig.url}/es${path}`,
       },

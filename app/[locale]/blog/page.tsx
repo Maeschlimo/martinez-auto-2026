@@ -91,7 +91,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
             {posts.map((post) => {
               const postData = l === "es" ? post.es : post.en;
               return (
-                <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group" aria-label={postData.title}>
                   <Card>
                     {/* Blog thumbnail placeholder */}
                     <div
