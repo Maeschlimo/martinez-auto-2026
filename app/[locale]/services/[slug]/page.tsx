@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/components/ui/Container";
@@ -213,13 +214,14 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
     <>
       {/* Service Hero */}
       <section className="relative bg-[#0d1b2a] py-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a] to-[#1e3a5f]/40" />
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{ background: "linear-gradient(135deg, #1e3a5f 0%, #0d1b2a 100%)" }}
-          aria-label={imageAlt}
-          role="img"
+        <Image
+          src={`/images/service-${slug}.webp`}
+          alt={imageAlt}
+          fill
+          className="object-cover opacity-20"
+          sizes="100vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a] to-[#1e3a5f]/40" />
         <Container className="relative z-10">
           <h1 className="text-5xl sm:text-6xl font-bold text-white" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
             {hero.headline}
@@ -257,6 +259,15 @@ export default async function ServicePage({ params }: { params: Promise<{ locale
 
             {/* Sidebar */}
             <div>
+              {/* Service Image */}
+              <Image
+                src={`/images/service-${slug}.webp`}
+                alt={imageAlt}
+                width={1200}
+                height={800}
+                className="w-full rounded-xl mb-6 object-cover"
+              />
+
               {/* Price Callout */}
               <div className="bg-[#faf9f7] rounded-xl p-6 border border-[#e7e5e4]">
                 <h3 className="text-xl font-bold text-[#1c1917] mb-4" style={{ fontFamily: 'var(--font-barlow, "Barlow Condensed", sans-serif)' }}>
